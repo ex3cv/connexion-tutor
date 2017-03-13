@@ -1,0 +1,25 @@
+swagger: '2.0'
+info:
+  title: Python executor
+  version: '0.1'
+  license:
+    name: 'GPL3'
+    url: 'https://www.gnu.org/licenses/gpl.html'
+basePath: /v1
+produces:
+  - text/plain; charset=utf-8
+paths:
+  /me:
+    get:
+      summary: 'Provide extensive information about the app'
+      operationId: main.dupa
+      parameters:
+        - name: show
+          in: query
+          type: string
+      responses:
+        200:
+          description: showing dupa
+          schema:
+            type: string
+            example: dupa
